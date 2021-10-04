@@ -40,6 +40,23 @@ h3 {
     line-height: 27px;
 }
 
+h4 {
+    color: red;
+    margin: auto 2rem;
+    text-align: center;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 2rem auto;
+}
+
+h5 {
+    color: red;
+    margin: 1rem 2rem auto 2rem;
+    text-align: left;
+    font-size: 17px;
+    line-height: 29px;
+}
+
 p {
     font-size: 17px;
     line-height: 29px;
@@ -48,6 +65,13 @@ p {
     padding: 1rem 0;
 }
 
+article {
+}
+
+button {
+    background-color: #FDDFE7;
+    border: none;
+}
 .hero-image {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -148,4 +172,10 @@ section:nth-child(2n) {
     background-color: red;
     border-radius: 50%;
     display: inline-block;
+}
+
+.lang-tags {
+    display: flex;
+    align-content: flex-start;
+    margin-left: 2rem;
 }
