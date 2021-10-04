@@ -31,12 +31,21 @@ h2 {
     letter-spacing: 0.02em;
 }
 
+h3 {
+    background-color: red;
+    color: white;
+    width: fit-content;
+    margin: auto;
+    font-size: 22px;
+    line-height: 27px;
+}
+
 p {
     font-size: 17px;
     line-height: 29px;
     text-align: left;
-    padding-bottom: 2rem;
-    margin: 0 2rem 2rem 2rem;
+    margin: 0 2rem;
+    padding: 1rem 0;
 }
 
 .hero-image {
@@ -114,6 +123,7 @@ section {
     width: 100%;
     margin: 0;
     text-align: center;
+    padding: 2rem 0;
 }
 
 section:nth-child(2n) {
@@ -122,6 +132,7 @@ section:nth-child(2n) {
 
 .intro-section > p {
     padding-top: 4rem;
+    padding-bottom: 3rem;
 }
 
 .line {
