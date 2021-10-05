@@ -29,6 +29,7 @@ h2 {
     font-size: 40px;
     line-height: 49px;
     letter-spacing: 0.02em;
+    margin: 1rem 0;
 }
 
 h3 {
@@ -174,8 +175,32 @@ section:nth-child(2n) {
     display: inline-block;
 }
 
+.project-wrapper {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.project-img {
+    width: 85vw;
+    margin-top: 1rem;
+}
+
+.project-name-overlay {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
 .lang-tags {
     display: flex;
     align-content: flex-start;
     margin-left: 2rem;
 }
+
