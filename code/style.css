@@ -244,21 +244,45 @@ section:nth-child(2n) {
 
 .skills-section > div > * {
     text-align: center;
+    margin: 0;
 }
 
 .more-social-media {
     display: grid;
     grid-template-columns: repeat(3 1fr);
+    row-gap: 1em;
+    justify-items: center;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 3em;
 }
 
 .more-social-media > a {
     border-radius: 50%;
     border: solid red 2px;
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     text-align: center;
+    margin: auto 1em;
 
 }
+
+.more-social-media > p {
+    grid-row: 2;
+    font-size: 11px;
+    line-height: 13px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* .git {
+    grid-column: 2;
+}
+
+.stack {
+    grid-column: 2/3;
+} */
 
 
 /* 
