@@ -233,9 +233,14 @@ section:nth-child(2n) {
     color: red;
 }
 
+.thoughts-section {
+    display: none;
+}
+
 .skills-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
 }
 
 .skills-section > h3 {
@@ -276,13 +281,20 @@ section:nth-child(2n) {
     font-weight: bold;
 }
 
-/* .git {
-    grid-column: 2;
+footer {
+    padding: 4rem;
+    background-color: blue;
 }
 
-.stack {
-    grid-column: 2/3;
-} */
+footer > h3 {
+    background-color: blue;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
 
 
 /* 
