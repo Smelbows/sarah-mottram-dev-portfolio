@@ -59,6 +59,7 @@ h5 {
 }
 
 p {
+    color: black;
     font-size: 17px;
     line-height: 29px;
     text-align: left;
@@ -82,13 +83,13 @@ button {
 .hero-image {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 50px 50px auto;
+    grid-template-rows: 25px 50px 25px auto;
     background: url(./assets/boardgame.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    height: 50vh;
+    height: 60vh;
 
 }
 
@@ -144,7 +145,7 @@ a > img {
     height: 11em;
     border-radius: 50%;
     border: solid white 3px;
-    margin: -17vh 3vh 0 0;
+    margin: -21vh 3vh 0 0;
     float: right;
 }
 
@@ -187,6 +188,7 @@ section:nth-child(2n) {
 }
 
 .project-img {
+    display: block;
     width: 100%;
     margin: 0;
     opacity: 0.8;
