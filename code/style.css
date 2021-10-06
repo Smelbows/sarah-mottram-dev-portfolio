@@ -52,10 +52,11 @@ h4 {
 
 h5 {
     color: red;
-    margin: 1rem 2rem auto 2rem;
+    margin: 1rem auto auto auto;
     text-align: left;
     font-size: 17px;
     line-height: 29px;
+    max-width: 300px;
 }
 
 h6 {
@@ -71,8 +72,9 @@ p {
     font-size: 17px;
     line-height: 29px;
     text-align: left;
-    margin: 0 2rem;
+    max-width: 300px;
     padding: 0;
+    margin: auto;
 }
 
 a {
@@ -168,6 +170,11 @@ section:nth-child(2n) {
     background-color: #F4F4F4;
 }
 
+.container {
+    margin: auto;
+    text-align: center;
+}
+
 .intro-section > p {
     padding-top: 4rem;
     padding-bottom: 3rem;
@@ -188,11 +195,16 @@ section:nth-child(2n) {
     display: inline-block;
 }
 
+.tech-p {
+    text-align: center;
+}
+
 .project-wrapper {
     display: inline-block;
     position: relative;
-    margin: 2rem 2rem 0 2rem;
+    margin: 2rem auto 0 auto;
     background-color: black;
+    max-width: 300px;
 }
 
 .mobile-hide {
@@ -224,9 +236,10 @@ section:nth-child(2n) {
 }
 
 .lang-tags {
+    max-width: 300px;
     display: flex;
     align-content: flex-start;
-    margin-left: 2rem;
+    margin: auto;
 }
 
 .red {
@@ -237,19 +250,25 @@ section:nth-child(2n) {
     display: none;
 }
 
-.skills-section > div {
+.skills-grid-parent {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1em;
+    max-width: 300px;
+    margin: auto;
 }
 
 .skills-section > div > h3 {
     grid-column: 1/3;
 }
 
-.skills-section > div > div > * {
+.skills {
+
+}
+
+.skills > * {
     text-align: center;
-    margin: 0;
+    margin: auto;
 }
 
 .more-social-media {
@@ -293,10 +312,42 @@ footer > h3 {
 footer > p {
     color: white;
     text-align: center;
-    margin: 0;
+    margin: auto;
 }
 
+@media (min-width: 480px) {
+    h5 {
+        max-width: 460px;
+    }
 
+    p {
+        max-width: 460px;
+    }
+
+    .project-wrapper {
+        max-width: 460px;
+    }
+
+    .lang-tags {
+        max-width: 460px;
+    }
+
+    .skills-grid-parent {
+        max-width: 460px;
+    }
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 1220px) {
+    
+}
 /* 
 To keep the width of the content always the same, just the margin changes
 .container {
