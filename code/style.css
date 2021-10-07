@@ -309,7 +309,11 @@ footer > h3 {
     background-color: blue;
 }
 
-footer > p {
+footer > * {
+    width: fit-content;
+    font-size: 17px;
+    line-height: 29px;
+    display: block;
     color: white;
     text-align: center;
     margin: auto;
