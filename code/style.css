@@ -217,6 +217,10 @@ section:nth-child(2n) {
     max-width: 300px;
 }
 
+#featured-projects-parent .arrow {
+    display: none;
+}
+
 #other-projects-parent .project-wrapper {
     display: none;
 }
