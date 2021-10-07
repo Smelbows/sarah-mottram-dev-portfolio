@@ -81,14 +81,7 @@ a {
     text-decoration: none;
 }
 
-button {
-    background-color: #FDDFE7;
-    border: none;
-    margin: 4px 4px 4px 0;
-    font-size: 9px;
-    line-height: 18px;
-    letter-spacing: 0.01em;
-}
+
 
 ul {
     padding: 0;
@@ -188,8 +181,8 @@ section:nth-child(2n) {
     text-align: center;
 }
 
-.intro-section > p {
-    padding-top: 4rem;
+.intro-section p {
+    padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
@@ -271,6 +264,17 @@ section:nth-child(2n) {
     display: flex;
     align-content: flex-start;
     margin: auto;
+    text-decoration: none;
+    color: black;
+}
+
+.language {
+    background-color: #FDDFE7;
+    border: none;
+    margin: 4px 4px 4px 0;
+    font-size: 9px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
 }
 
 .red {
@@ -357,24 +361,11 @@ footer > * {
 }
 
 @media (min-width: 480px) {
-    h5 {
-        max-width: 460px;
-    }
-
-    p {
-        max-width: 460px;
-    }
-
-    .project-wrapper {
-        max-width: 460px;
-    }
-
-    .lang-tags {
+    h5, p, .project-wrapper, .lang-tags, .skills-grid-parent {
         max-width: 460px;
     }
 
     .skills-grid-parent {
-        max-width: 460px;
         column-gap: 6em;
 
     }
@@ -398,26 +389,9 @@ footer > * {
 }
 
 @media (min-width: 768px) {
-    h5 {
+    h5, p, .project-wrapper, .lang-tags, .skills-grid-parent {
         max-width: 700px;
     }
-
-    p {
-        max-width: 700px;
-    }
-
-    .project-wrapper {
-        max-width: 700px;
-    }
-
-    .lang-tags {
-        max-width: 700px;
-    }
-
-    .skills-grid-parent {
-        max-width: 700px;
-    }
-
 
     h1 {
         font-size: 22px;
@@ -445,17 +419,17 @@ footer > * {
 }
 
 @media (min-width: 1024px) {
+
+    h5, p, .project-wrapper, .lang-tags, .skills-grid-parent, #featured-projects-parent {
+        max-width: 740px;
+    }
+
     #featured-projects-parent {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-width: 700px;
         margin: auto;
-        gap: 2em;
+        gap: 3em;
     }
-
-    /* .hero-image {
-        padding: 4em 6em;
-    } */
 
     h1 {
         font-size: 26px;
@@ -465,6 +439,14 @@ footer > * {
     h2 {
         font-size: 56px;
         line-height: 58px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 22px;
     }
 
     .skills-grid-parent {
@@ -499,9 +481,6 @@ footer > * {
     .profile-img {
         margin-right: 25em;
     }
-
-
-    
 }
 /* 
 To keep the width of the content always the same, just the margin changes
