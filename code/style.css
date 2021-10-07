@@ -188,6 +188,7 @@ section:nth-child(2n) {
 
 .line {
     border: 1px solid red;
+    background-color: red;
     width: 40px;
     display: inline-block;
     margin-bottom: 4px;
@@ -279,6 +280,7 @@ section:nth-child(2n) {
 
 .red {
     color: red;
+    font-weight: bold;
 }
 
 .thoughts-section {
