@@ -13,7 +13,17 @@ const moveProjectDown = () => {
   otherProjects.insertBefore(project, otherProjects.firstElementChild);
 };
 
-if (window.innerWidth >= 1024) {
-    moveProjectUp()
-    moveProjectUp()
-}
+const moveProjectsForScreenSize = () => {
+    if (window.innerWidth >= 1024) {
+        while (featuredProjects.childElementCount < 4) {
+            moveProjectUp();
+        }
+    } else {
+        while (featuredProjects.childElementCount > 2) {
+            moveProjectDown();
+        }
+    }
+};
+
+moveProjectsForScreenSize()
+window.onresize = moveProjectsForScreenSize
