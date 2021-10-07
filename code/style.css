@@ -35,8 +35,8 @@ h2 {
 h3 {
     background-color: red;
     color: white;
-    width: fit-content;
-    margin: auto auto 1rem auto;
+    width: max-content;
+    margin: 0 auto 1rem auto;
     padding: 3px;
     font-size: 22px;
     line-height: 27px;
