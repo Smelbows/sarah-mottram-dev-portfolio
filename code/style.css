@@ -79,6 +79,7 @@ p {
 
 a {
     text-decoration: none;
+    cursor: url(./assets/icons8-development-skill-30.png), auto;
 }
 
 
@@ -363,6 +364,31 @@ footer > * {
     margin: auto;
 }
 
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+  
+  a:hover {
+    animation: bounce 1s;
+  }
+
+  .profile-img:hover {
+    animation: bounce 1s; 
+  }
+
 @media (min-width: 480px) {
     h5, p, .project-wrapper, .lang-tags, .skills-grid-parent {
         max-width: 460px;
@@ -491,12 +517,17 @@ footer > * {
 @media (min-width: 1220px) {
 
     .hero-text {
-        margin-left:  25em;
+        margin-left:  22em;
     }
 
     .profile-img {
-        margin-right: 25em;
+        margin-right: 22em;
+        width: 14em;
+        height: 14em;
+        margin-top: 17em
+    
     }
+
 }
 /* 
 To keep the width of the content always the same, just the margin changes
