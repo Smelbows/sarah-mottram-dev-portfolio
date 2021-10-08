@@ -316,12 +316,13 @@ section:nth-child(2n) {
 
 .more-social-media {
     display: grid;
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1em;
     row-gap: 1em;
     justify-items: center;
     justify-content: center;
-    /* align-items: center; */
-    margin-top: 3em;
+    margin: 3em auto;
+    max-width: 300px;
 }
 
 .more-social-media > a {
@@ -330,7 +331,7 @@ section:nth-child(2n) {
     height: 60px;
     width: 60px;
     text-align: center;
-    margin: auto 1em;
+    margin: auto;
 
 }
 
@@ -385,6 +386,11 @@ footer > * {
     .hero-text {
         margin-left: 4em;
         margin-right: 4em;
+    }
+
+    .more-social-media {
+        max-width: 340px;
+        column-gap: 0
     }
 
 
